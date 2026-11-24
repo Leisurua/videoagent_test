@@ -1,0 +1,146 @@
+syntax = "proto3";
+
+package videoagent.media.v1;
+
+option go_package = "github.com/videoagent/videoagent_project/go/internal/media/pb;mediapb";
+
+// MediaService provides deterministic C++ video decoding, frame sampling,
+// cropping, local ASR (whisper.cpp), and OCR (Tesseract) over gRPC.
+// All timestamps and durations are integer milliseconds.
+service MediaService {
+  rpc HealthCheck(HealthCheckRequest) returns (HealthCheckResponse);
+  rpc GetVideoMetadata(GetVideoMetadataRequest) returns (GetVideoMetadataResponse);
+  rpc TranscribeASR(TranscribeASRRequest) returns (TranscribeASRResponse);
+  rpc SampleFrames(SampleFramesRequest) returns (SampleFramesResponse);
+  rpc GetFrame(GetFrameRequest) returns (GetFrameResponse);
+  rpc CropFrame(CropFrameRequest) returns (CropFrameResponse);
+  rpc OCRFrame(OCRFrameRequest) returns (OCRFrameResponse);
+}
+
+message HealthCheckRequest {}
+
+message HealthCheckResponse {
+  bool ok = 1;
+  string service_version = 2;
+  string ffmpeg_version = 3;
+  bool whisper_available = 4;
+  bool tesseract_available = 5;
+}
+
+message GetVideoMetadataRequest {
+  string video_path = 1;
+}
+
+message GetVideoMetadataResponse {
+  int64 duration_ms = 1;
+  int32 width = 2;
+  int32 height = 3;
+  double fps = 4;
+  bool has_audio = 5;
+  string video_codec = 6;
+  string audio_codec = 7;
+}
+
+message TranscribeASRRequest {
+  string video_path = 1;
+  string model_path = 2;
+  string language = 3; // e.g. "auto", "zh", "en"
+}
+
+message ASRSpan {
+  int64 start_ms = 1;
+  int64 end_ms = 2;
+  string text = 3;
+}
+
+message TranscribeASRResponse {
+  repeated ASRSpan spans = 1;
+  string detected_language = 2;
+}
+
+message SampleFramesRequest {
+  string video_id = 1;
+  string video_path = 2;
+  int64 start_ms = 3;
+  int64 end_ms = 4;
+  int32 num_frames = 5;
+  int32 target_width = 6;  // 0 keeps original width
+  int32 target_height = 7; // 0 keeps original height
+  string artifact_dir = 8;
+}
+
+message FrameArtifact {
+  string ref = 1;
+  string video_id = 2;
+  string image_path = 3;
+  int64 requested_ms = 4;
+  int64 pts_ms = 5;
+  int64 display_end_ms = 6;
+  int32 width = 7;
+  int32 height = 8;
+}
+
+message SampleFramesResponse {
+  repeated FrameArtifact frames = 1;
+  double visual_change = 2; // Mean abs RGB diff / 255 in [0, 1]
+}
+
+message GetFrameRequest {
+  string video_id = 1;
+  string video_path = 2;
+  int64 timestamp_ms = 3;
+  string artifact_dir = 4;
+}
+
+message GetFrameResponse {
+  FrameArtifact frame = 1;
+}
+
+message NormalizedBBox {
+  double x1 = 1;
+  double y1 = 2;
+  double x2 = 3;
+  double y2 = 4;
+}
+
+message PixelRect {
+  int32 x = 1;
+  int32 y = 2;
+  int32 width = 3;
+  int32 height = 4;
+}
+
+message CropFrameRequest {
+  string video_id = 1;
+  string video_path = 2;
+  int64 timestamp_ms = 3;
+  NormalizedBBox bbox = 4;
+  string artifact_dir = 5;
+}
+
+message CropFrameResponse {
+  FrameArtifact original_frame = 1;
+  FrameArtifact cropped_frame = 2;
+  PixelRect pixel_rect = 3;
+}
+
+message OCRFrameRequest {
+  string video_id = 1;
+  string video_path = 2;
+  int64 timestamp_ms = 3;
+  NormalizedBBox bbox = 4; // optional; if all 0, OCR full frame
+  string language = 5;     // e.g. "eng", "chi_sim"
+  string artifact_dir = 6;
+}
+
+message OCRWord {
+  string text = 1;
+  NormalizedBBox bbox = 2; // normalized relative to original frame
+  double confidence = 3;   // [0, 1], or -1 if unavailable
+}
+
+message OCRFrameResponse {
+  string image_ref = 1;
+  repeated OCRWord words = 2;
+  string full_text = 3;
+}

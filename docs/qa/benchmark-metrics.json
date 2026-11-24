@@ -1,0 +1,1613 @@
+{
+  "groups": {
+    "A": {
+      "runs": 9,
+      "reviewed": 9,
+      "fully_correct_answers": 2,
+      "strict_pass": 1,
+      "rubric_mean": 31.2,
+      "latency_p50_ms": 4216,
+      "latency_p95_nearest_rank_ms": 7518,
+      "tool_calls_mean": 0,
+      "provider_reported_tokens_total": {
+        "text_embedding": 264,
+        "deepseek": 8501
+      },
+      "provider_calls_total": {
+        "text_embedding": 9,
+        "deepseek": 9
+      },
+      "provider_calls_without_usage": {},
+      "provider_http_failures": {},
+      "runner_reported_reasoner_tokens_total": 8501
+    },
+    "B": {
+      "runs": 9,
+      "reviewed": 9,
+      "fully_correct_answers": 2,
+      "strict_pass": 1,
+      "rubric_mean": 32.59,
+      "latency_p50_ms": 20986,
+      "latency_p95_nearest_rank_ms": 28351,
+      "tool_calls_mean": 8.89,
+      "provider_reported_tokens_total": {
+        "text_embedding": 596,
+        "deepseek": 370104
+      },
+      "provider_calls_total": {
+        "text_embedding": 43,
+        "deepseek": 75
+      },
+      "provider_calls_without_usage": {},
+      "provider_http_failures": {},
+      "runner_reported_reasoner_tokens_total": 370104
+    },
+    "C": {
+      "runs": 9,
+      "reviewed": 9,
+      "fully_correct_answers": 3,
+      "strict_pass": 2,
+      "rubric_mean": 45,
+      "latency_p50_ms": 86090,
+      "latency_p95_nearest_rank_ms": 248303,
+      "tool_calls_mean": 20,
+      "provider_reported_tokens_total": {
+        "text_embedding": 410,
+        "deepseek": 817025,
+        "vlm": 383435
+      },
+      "provider_calls_total": {
+        "text_embedding": 24,
+        "deepseek": 88,
+        "vlm": 79
+      },
+      "provider_calls_without_usage": {
+        "vlm": 2
+      },
+      "provider_http_failures": {
+        "429": 2
+      },
+      "runner_reported_reasoner_tokens_total": 817025
+    },
+    "D": {
+      "runs": 9,
+      "reviewed": 9,
+      "fully_correct_answers": 4,
+      "strict_pass": 3,
+      "rubric_mean": 54.81,
+      "latency_p50_ms": 99260,
+      "latency_p95_nearest_rank_ms": 265389,
+      "tool_calls_mean": 35.44,
+      "provider_reported_tokens_total": {
+        "text_embedding": 584,
+        "visual_embedding": 1125,
+        "deepseek": 1186309,
+        "vlm": 528614
+      },
+      "provider_calls_total": {
+        "text_embedding": 43,
+        "visual_embedding": 43,
+        "deepseek": 151,
+        "vlm": 127
+      },
+      "provider_calls_without_usage": {
+        "vlm": 11
+      },
+      "provider_http_failures": {
+        "429": 11
+      },
+      "runner_reported_reasoner_tokens_total": 1126931
+    },
+    "D-S": {
+      "runs": 3,
+      "reviewed": 3,
+      "fully_correct_answers": 1,
+      "strict_pass": 0,
+      "rubric_mean": 41.67,
+      "latency_p50_ms": 82204,
+      "latency_p95_nearest_rank_ms": 138370,
+      "tool_calls_mean": 24,
+      "provider_reported_tokens_total": {
+        "text_embedding": 182,
+        "visual_embedding": 339,
+        "deepseek": 230878,
+        "vlm": 106388
+      },
+      "provider_calls_total": {
+        "text_embedding": 12,
+        "visual_embedding": 12,
+        "deepseek": 33,
+        "vlm": 31
+      },
+      "provider_calls_without_usage": {},
+      "provider_http_failures": {},
+      "runner_reported_reasoner_tokens_total": 230878
+    },
+    "T-M": {
+      "runs": 3,
+      "reviewed": 3,
+      "fully_correct_answers": 0,
+      "strict_pass": 0,
+      "rubric_mean": 28.89,
+      "latency_p50_ms": 81166,
+      "latency_p95_nearest_rank_ms": 144745,
+      "tool_calls_mean": 42,
+      "provider_reported_tokens_total": {
+        "text_embedding": 203,
+        "deepseek": 414759,
+        "vlm": 86405
+      },
+      "provider_calls_total": {
+        "text_embedding": 14,
+        "deepseek": 58,
+        "vlm": 31
+      },
+      "provider_calls_without_usage": {
+        "vlm": 17
+      },
+      "provider_http_failures": {
+        "429": 17
+      },
+      "runner_reported_reasoner_tokens_total": 396988
+    }
+  },
+  "serial_questions_01_to_07": {
+    "A": {
+      "runs": 7,
+      "reviewed": 7,
+      "fully_correct_answers": 1,
+      "strict_pass": 0,
+      "rubric_mean": 22.26,
+      "latency_p50_ms": 4216,
+      "latency_p95_nearest_rank_ms": 7518,
+      "tool_calls_mean": 0,
+      "provider_reported_tokens_total": {
+        "text_embedding": 219,
+        "deepseek": 7060
+      },
+      "provider_calls_total": {
+        "text_embedding": 7,
+        "deepseek": 7
+      },
+      "provider_calls_without_usage": {},
+      "provider_http_failures": {},
+      "runner_reported_reasoner_tokens_total": 7060
+    },
+    "B": {
+      "runs": 7,
+      "reviewed": 7,
+      "fully_correct_answers": 1,
+      "strict_pass": 0,
+      "rubric_mean": 24.05,
+      "latency_p50_ms": 20986,
+      "latency_p95_nearest_rank_ms": 28351,
+      "tool_calls_mean": 8.57,
+      "provider_reported_tokens_total": {
+        "text_embedding": 474,
+        "deepseek": 269987
+      },
+      "provider_calls_total": {
+        "text_embedding": 33,
+        "deepseek": 55
+      },
+      "provider_calls_without_usage": {},
+      "provider_http_failures": {},
+      "runner_reported_reasoner_tokens_total": 269987
+    },
+    "C": {
+      "runs": 7,
+      "reviewed": 7,
+      "fully_correct_answers": 1,
+      "strict_pass": 0,
+      "rubric_mean": 29.29,
+      "latency_p50_ms": 62733,
+      "latency_p95_nearest_rank_ms": 150845,
+      "tool_calls_mean": 16.43,
+      "provider_reported_tokens_total": {
+        "text_embedding": 333,
+        "deepseek": 389825,
+        "vlm": 213723
+      },
+      "provider_calls_total": {
+        "text_embedding": 19,
+        "deepseek": 53,
+        "vlm": 48
+      },
+      "provider_calls_without_usage": {
+        "vlm": 2
+      },
+      "provider_http_failures": {
+        "429": 2
+      },
+      "runner_reported_reasoner_tokens_total": 389825
+    },
+    "D": {
+      "runs": 7,
+      "reviewed": 7,
+      "fully_correct_answers": 2,
+      "strict_pass": 1,
+      "rubric_mean": 41.9,
+      "latency_p50_ms": 80580,
+      "latency_p95_nearest_rank_ms": 265389,
+      "tool_calls_mean": 30,
+      "provider_reported_tokens_total": {
+        "text_embedding": 416,
+        "visual_embedding": 766,
+        "deepseek": 706458,
+        "vlm": 330755
+      },
+      "provider_calls_total": {
+        "text_embedding": 28,
+        "visual_embedding": 28,
+        "deepseek": 102,
+        "vlm": 89
+      },
+      "provider_calls_without_usage": {
+        "vlm": 6
+      },
+      "provider_http_failures": {
+        "429": 6
+      },
+      "runner_reported_reasoner_tokens_total": 662162
+    }
+  },
+  "runs": [
+    {
+      "id": "Q01",
+      "group": "A",
+      "latency_ms": 1454,
+      "tool_calls": 0,
+      "runner_reasoner_tokens": 605,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "deepseek": 1
+      },
+      "tokens": {
+        "text_embedding": 27,
+        "deepseek": 605
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": 30,
+        "time_points": 0,
+        "score": 80,
+        "answer_correct": true,
+        "strict_pass": false,
+        "notes": "正确答3次，有ASR原句。只定位到30秒分片，真实语音约48.11–50.15秒。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q01",
+      "group": "B",
+      "latency_ms": 9143,
+      "tool_calls": 4,
+      "runner_reasoner_tokens": 11492,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 3,
+        "deepseek": 4
+      },
+      "tokens": {
+        "text_embedding": 46,
+        "deepseek": 11492
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": 30,
+        "time_points": 0,
+        "score": 80,
+        "answer_correct": true,
+        "strict_pass": false,
+        "notes": "正确答3次，有ASR原句。只定位到30秒分片，真实语音约48.11–50.15秒。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q01",
+      "group": "C",
+      "latency_ms": 29918,
+      "tool_calls": 6,
+      "runner_reasoner_tokens": 15983,
+      "evidence_count": 2,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 2,
+        "deepseek": 4,
+        "vlm": 2
+      },
+      "tokens": {
+        "text_embedding": 37,
+        "deepseek": 15983,
+        "vlm": 15214
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": 30,
+        "time_points": 0,
+        "score": 80,
+        "answer_correct": true,
+        "strict_pass": false,
+        "notes": "正确答3次，有ASR原句。只定位到30秒分片，真实语音约48.11–50.15秒。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q01",
+      "group": "D",
+      "latency_ms": 47027,
+      "tool_calls": 10,
+      "runner_reasoner_tokens": 32535,
+      "evidence_count": 4,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 4,
+        "visual_embedding": 4,
+        "deepseek": 7,
+        "vlm": 4
+      },
+      "tokens": {
+        "text_embedding": 52,
+        "visual_embedding": 99,
+        "deepseek": 33425,
+        "vlm": 17515
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": 30,
+        "time_points": 0,
+        "score": 80,
+        "answer_correct": true,
+        "strict_pass": false,
+        "notes": "正确答3次，有ASR原句。只定位到30秒分片，真实语音约48.11–50.15秒。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q02",
+      "group": "A",
+      "latency_ms": 2632,
+      "tool_calls": 0,
+      "runner_reasoner_tokens": 893,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "deepseek": 1
+      },
+      "tokens": {
+        "text_embedding": 35,
+        "deepseek": 893
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "缺少视觉内容，未给编号。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q02",
+      "group": "B",
+      "latency_ms": 11729,
+      "tool_calls": 3,
+      "runner_reasoner_tokens": 16906,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 2,
+        "deepseek": 6
+      },
+      "tokens": {
+        "text_embedding": 45,
+        "deepseek": 16906
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "视觉工具受组别限制，未给编号。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q02",
+      "group": "C",
+      "latency_ms": 39206,
+      "tool_calls": 17,
+      "runner_reasoner_tokens": 29310,
+      "evidence_count": 4,
+      "termination": "consecutive_tool_calls",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "deepseek": 7,
+        "vlm": 5
+      },
+      "tokens": {
+        "text_embedding": 35,
+        "deepseek": 29310,
+        "vlm": 12090
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 20,
+        "score": 20,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "定位正确，误把右上角数字零当成字母O。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q02",
+      "group": "D",
+      "latency_ms": 132627,
+      "tool_calls": 55,
+      "runner_reasoner_tokens": 178467,
+      "evidence_count": 20,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 2,
+        "visual_embedding": 2,
+        "deepseek": 23,
+        "vlm": 25
+      },
+      "tokens": {
+        "text_embedding": 48,
+        "visual_embedding": 77,
+        "deepseek": 187374,
+        "vlm": 60662
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": 30,
+        "time_points": 20,
+        "score": 100,
+        "answer_correct": true,
+        "strict_pass": true,
+        "notes": "给出R0-17，区分左侧RO-17，给出实在的432000/433120等帧。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q03",
+      "group": "A",
+      "latency_ms": 5354,
+      "tool_calls": 0,
+      "runner_reasoner_tokens": 1366,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "deepseek": 1
+      },
+      "tokens": {
+        "text_embedding": 37,
+        "deepseek": 1366
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 15,
+        "time_points": 0,
+        "score": 40,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "识别迟到的口述，但漏掉140000 ms首次状态转换；没有精确的ASR引用。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q03",
+      "group": "B",
+      "latency_ms": 21783,
+      "tool_calls": 10,
+      "runner_reasoner_tokens": 47670,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 3,
+        "deepseek": 10
+      },
+      "tokens": {
+        "text_embedding": 55,
+        "deepseek": 47670
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 15,
+        "time_points": 0,
+        "score": 40,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "识别迟到的口述，但漏掉140000 ms首次状态转换；没有精确的ASR引用。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q03",
+      "group": "C",
+      "latency_ms": 62733,
+      "tool_calls": 13,
+      "runner_reasoner_tokens": 26235,
+      "evidence_count": 8,
+      "termination": "consecutive_tool_calls",
+      "error": null,
+      "calls": {
+        "text_embedding": 2,
+        "deepseek": 6,
+        "vlm": 9
+      },
+      "tokens": {
+        "text_embedding": 48,
+        "deepseek": 26235,
+        "vlm": 23160
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 15,
+        "time_points": 0,
+        "score": 40,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "识别迟到的口述，但漏掉140000 ms首次状态转换；没有精确的ASR引用。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q03",
+      "group": "D",
+      "latency_ms": 48259,
+      "tool_calls": 35,
+      "runner_reasoner_tokens": 83533,
+      "evidence_count": 1,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 3,
+        "visual_embedding": 3,
+        "deepseek": 17,
+        "vlm": 6
+      },
+      "tokens": {
+        "text_embedding": 67,
+        "visual_embedding": 101,
+        "deepseek": 89121,
+        "vlm": 15001
+      },
+      "missing_usage": {
+        "vlm": 4
+      },
+      "http_failures": {
+        "429": 4
+      },
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 15,
+        "time_points": 0,
+        "score": 40,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "识别迟到的口述，但漏掉140000 ms首次状态转换；没有精确的ASR引用。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q04",
+      "group": "A",
+      "latency_ms": 6691,
+      "tool_calls": 0,
+      "runner_reasoner_tokens": 1318,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "deepseek": 1
+      },
+      "tokens": {
+        "text_embedding": 30,
+        "deepseek": 1318
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 8.33,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 8.33,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "仅答出改端口的指令，漏掉具体失败原因、实际新值和成功验证。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q04",
+      "group": "B",
+      "latency_ms": 28351,
+      "tool_calls": 16,
+      "runner_reasoner_tokens": 59031,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 9,
+        "deepseek": 9
+      },
+      "tokens": {
+        "text_embedding": 106,
+        "deepseek": 59031
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 8.33,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 8.33,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "仅答出改端口的指令，漏掉具体失败原因、实际新值和成功验证。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q04",
+      "group": "C",
+      "latency_ms": 118926,
+      "tool_calls": 11,
+      "runner_reasoner_tokens": 19627,
+      "evidence_count": 7,
+      "termination": "consecutive_tool_calls",
+      "error": null,
+      "calls": {
+        "text_embedding": 3,
+        "deepseek": 5,
+        "vlm": 7
+      },
+      "tokens": {
+        "text_embedding": 48,
+        "deepseek": 19627,
+        "vlm": 8058
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 8.33,
+        "evidence_points": 0,
+        "time_points": 6.67,
+        "score": 15,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "看到490000 ms端口8080页面，未确认实际修改和同一任务恢复。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q04",
+      "group": "D",
+      "latency_ms": 80580,
+      "tool_calls": 23,
+      "runner_reasoner_tokens": 40923,
+      "evidence_count": 11,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 3,
+        "visual_embedding": 3,
+        "deepseek": 10,
+        "vlm": 11
+      },
+      "tokens": {
+        "text_embedding": 47,
+        "visual_embedding": 86,
+        "deepseek": 51084,
+        "vlm": 12498
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 8.33,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 8.33,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "仅答出改端口的指令，漏掉具体失败原因、实际新值和成功验证。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q05",
+      "group": "A",
+      "latency_ms": 4216,
+      "tool_calls": 0,
+      "runner_reasoner_tokens": 1241,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "deepseek": 1
+      },
+      "tokens": {
+        "text_embedding": 28,
+        "deepseek": 1241
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 12.5,
+        "evidence_points": 15,
+        "time_points": 0,
+        "score": 27.5,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "引用了正确口述但未能与首次提交匹配。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q05",
+      "group": "B",
+      "latency_ms": 20986,
+      "tool_calls": 9,
+      "runner_reasoner_tokens": 47546,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 4,
+        "deepseek": 9
+      },
+      "tokens": {
+        "text_embedding": 53,
+        "deepseek": 47546
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 15,
+        "time_points": 0,
+        "score": 40,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "识别条件下最合适口述，状态栏未作答。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q05",
+      "group": "C",
+      "latency_ms": 147143,
+      "tool_calls": 24,
+      "runner_reasoner_tokens": 145185,
+      "evidence_count": 8,
+      "termination": "consecutive_tool_calls",
+      "error": null,
+      "calls": {
+        "text_embedding": 4,
+        "deepseek": 13,
+        "vlm": 15
+      },
+      "tokens": {
+        "text_embedding": 54,
+        "deepseek": 145185,
+        "vlm": 85262
+      },
+      "missing_usage": {
+        "vlm": 2
+      },
+      "http_failures": {
+        "429": 2
+      },
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "未回答声画冲突，并将采样未发现误写为不存在。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q05",
+      "group": "D",
+      "latency_ms": 190221,
+      "tool_calls": 34,
+      "runner_reasoner_tokens": 112411,
+      "evidence_count": 10,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 5,
+        "visual_embedding": 5,
+        "deepseek": 18,
+        "vlm": 17
+      },
+      "tokens": {
+        "text_embedding": 63,
+        "visual_embedding": 126,
+        "deepseek": 120200,
+        "vlm": 68097
+      },
+      "missing_usage": {
+        "vlm": 2
+      },
+      "http_failures": {
+        "429": 2
+      },
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 15,
+        "time_points": 0,
+        "score": 40,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "作为备选给出了正确口述和FAILED片段，主结论拒绝匹配首次事件，且片段起点错位。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q06",
+      "group": "A",
+      "latency_ms": 7518,
+      "tool_calls": 0,
+      "runner_reasoner_tokens": 657,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "deepseek": 1
+      },
+      "tokens": {
+        "text_embedding": 30,
+        "deepseek": 657
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "未定位首次出现。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q06",
+      "group": "B",
+      "latency_ms": 21776,
+      "tool_calls": 9,
+      "runner_reasoner_tokens": 40968,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 6,
+        "deepseek": 8
+      },
+      "tokens": {
+        "text_embedding": 80,
+        "deepseek": 40968
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "未定位首次出现。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q06",
+      "group": "C",
+      "latency_ms": 29407,
+      "tool_calls": 13,
+      "runner_reasoner_tokens": 17846,
+      "evidence_count": 0,
+      "termination": "consecutive_tool_calls",
+      "error": null,
+      "calls": {
+        "text_embedding": 2,
+        "deepseek": 5,
+        "vlm": 3
+      },
+      "tokens": {
+        "text_embedding": 43,
+        "deepseek": 17846,
+        "vlm": 22318
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "未定位首次出现。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q06",
+      "group": "D",
+      "latency_ms": 265389,
+      "tool_calls": 43,
+      "runner_reasoner_tokens": 199588,
+      "evidence_count": 7,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 10,
+        "visual_embedding": 10,
+        "deepseek": 21,
+        "vlm": 21
+      },
+      "tokens": {
+        "text_embedding": 107,
+        "visual_embedding": 232,
+        "deepseek": 205672,
+        "vlm": 119033
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "找到了第二次795000 ms，把它当首次；与569720 ms真值相差225280 ms。",
+        "absolute_time_error_ms": 225280
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q07",
+      "group": "A",
+      "latency_ms": 3085,
+      "tool_calls": 0,
+      "runner_reasoner_tokens": 980,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "deepseek": 1
+      },
+      "tokens": {
+        "text_embedding": 32,
+        "deepseek": 980
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "未能获取两个文件名。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q07",
+      "group": "B",
+      "latency_ms": 17271,
+      "tool_calls": 9,
+      "runner_reasoner_tokens": 46374,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 6,
+        "deepseek": 9
+      },
+      "tokens": {
+        "text_embedding": 89,
+        "deepseek": 46374
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "只确认导出发生，未读到文件名。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q07",
+      "group": "C",
+      "latency_ms": 150845,
+      "tool_calls": 31,
+      "runner_reasoner_tokens": 135639,
+      "evidence_count": 6,
+      "termination": "consecutive_tool_calls",
+      "error": null,
+      "calls": {
+        "text_embedding": 5,
+        "deepseek": 13,
+        "vlm": 7
+      },
+      "tokens": {
+        "text_embedding": 68,
+        "deepseek": 135639,
+        "vlm": 47621
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 15,
+        "time_points": 10,
+        "score": 50,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "正确给出正式导出的result.csv及874360 ms帧，未找到试导出draft.csv。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q07",
+      "group": "D",
+      "latency_ms": 73923,
+      "tool_calls": 10,
+      "runner_reasoner_tokens": 14705,
+      "evidence_count": 3,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "visual_embedding": 1,
+        "deepseek": 6,
+        "vlm": 5
+      },
+      "tokens": {
+        "text_embedding": 32,
+        "visual_embedding": 45,
+        "deepseek": 19582,
+        "vlm": 37949
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 25,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "正确确认result.csv，逐题引用未落到实际支持帧，未找到draft.csv。"
+      },
+      "execution_lane": "benchmark"
+    },
+    {
+      "id": "Q02",
+      "group": "D-S",
+      "latency_ms": 82204,
+      "tool_calls": 26,
+      "runner_reasoner_tokens": 106882,
+      "evidence_count": 9,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 3,
+        "visual_embedding": 3,
+        "deepseek": 14,
+        "vlm": 10
+      },
+      "tokens": {
+        "text_embedding": 52,
+        "visual_embedding": 99,
+        "deepseek": 106882,
+        "vlm": 24429
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": 30,
+        "time_points": 20,
+        "score": 100,
+        "answer_correct": true,
+        "strict_pass": false,
+        "notes": "给出R0-17和正确帧，同时有一句把左侧RO-17误作R0-17，故严格不通过。"
+      },
+      "execution_lane": "variants"
+    },
+    {
+      "id": "Q02",
+      "group": "T-M",
+      "latency_ms": 81166,
+      "tool_calls": 61,
+      "runner_reasoner_tokens": 243714,
+      "evidence_count": 2,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 5,
+        "deepseek": 29,
+        "vlm": 13
+      },
+      "tokens": {
+        "text_embedding": 80,
+        "deepseek": 248314,
+        "vlm": 2367
+      },
+      "missing_usage": {
+        "vlm": 11
+      },
+      "http_failures": {
+        "429": 11
+      },
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 20,
+        "score": 20,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "定位正确，最终以左侧示例推断编号RO-17。"
+      },
+      "execution_lane": "variants"
+    },
+    {
+      "id": "Q04",
+      "group": "D-S",
+      "latency_ms": 138370,
+      "tool_calls": 25,
+      "runner_reasoner_tokens": 76735,
+      "evidence_count": 13,
+      "termination": "consecutive_tool_calls",
+      "error": null,
+      "calls": {
+        "text_embedding": 5,
+        "visual_embedding": 5,
+        "deepseek": 9,
+        "vlm": 13
+      },
+      "tokens": {
+        "text_embedding": 69,
+        "visual_embedding": 131,
+        "deepseek": 76735,
+        "vlm": 47610
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 25,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "答出非法端口70000与改端口的指令，把失败归到不显示该画面的189375 ms，且未确认同一任务成功。"
+      },
+      "execution_lane": "variants"
+    },
+    {
+      "id": "Q04",
+      "group": "T-M",
+      "latency_ms": 144745,
+      "tool_calls": 27,
+      "runner_reasoner_tokens": 60404,
+      "evidence_count": 6,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 6,
+        "deepseek": 11,
+        "vlm": 6
+      },
+      "tokens": {
+        "text_embedding": 82,
+        "deepseek": 67894,
+        "vlm": 39105
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 33.33,
+        "evidence_points": 20,
+        "time_points": 13.33,
+        "score": 66.66,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "两帧支持70000无效和8080配置，漏掉Job 42重试成功帧。"
+      },
+      "execution_lane": "variants"
+    },
+    {
+      "id": "Q06",
+      "group": "D-S",
+      "latency_ms": 65007,
+      "tool_calls": 21,
+      "runner_reasoner_tokens": 47261,
+      "evidence_count": 4,
+      "termination": "consecutive_tool_calls",
+      "error": null,
+      "calls": {
+        "text_embedding": 4,
+        "visual_embedding": 4,
+        "deepseek": 10,
+        "vlm": 8
+      },
+      "tokens": {
+        "text_embedding": 61,
+        "visual_embedding": 109,
+        "deepseek": 47261,
+        "vlm": 34349
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "基于稀疏抽帧未命中首次出现，没有时间答案。"
+      },
+      "execution_lane": "variants"
+    },
+    {
+      "id": "Q06",
+      "group": "T-M",
+      "latency_ms": 73704,
+      "tool_calls": 38,
+      "runner_reasoner_tokens": 92870,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 3,
+        "deepseek": 18,
+        "vlm": 12
+      },
+      "tokens": {
+        "text_embedding": 41,
+        "deepseek": 98551,
+        "vlm": 44933
+      },
+      "missing_usage": {
+        "vlm": 6
+      },
+      "http_failures": {
+        "429": 6
+      },
+      "review": {
+        "answer_points": 0,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 0,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "基于稀疏抽帧未命中首次出现，没有时间答案。"
+      },
+      "execution_lane": "variants"
+    },
+    {
+      "id": "Q08",
+      "group": "A",
+      "latency_ms": 4291,
+      "tool_calls": 0,
+      "runner_reasoner_tokens": 717,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "deepseek": 1
+      },
+      "tokens": {
+        "text_embedding": 22,
+        "deepseek": 717
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": null,
+        "time_points": null,
+        "score": 100,
+        "answer_correct": true,
+        "strict_pass": true,
+        "notes": "正确说明现有视频证据没有给出行数，没有编造数字。此题不强制正证据锚点。"
+      },
+      "execution_lane": "parallel"
+    },
+    {
+      "id": "Q08",
+      "group": "B",
+      "latency_ms": 13778,
+      "tool_calls": 8,
+      "runner_reasoner_tokens": 31986,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 5,
+        "deepseek": 8
+      },
+      "tokens": {
+        "text_embedding": 60,
+        "deepseek": 31986
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": null,
+        "time_points": null,
+        "score": 100,
+        "answer_correct": true,
+        "strict_pass": true,
+        "notes": "正确说明现有视频证据没有给出行数，没有编造数字。此题不强制正证据锚点。"
+      },
+      "execution_lane": "parallel"
+    },
+    {
+      "id": "Q08",
+      "group": "C",
+      "latency_ms": 248303,
+      "tool_calls": 33,
+      "runner_reasoner_tokens": 277947,
+      "evidence_count": 15,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 3,
+        "deepseek": 18,
+        "vlm": 21
+      },
+      "tokens": {
+        "text_embedding": 46,
+        "deepseek": 277947,
+        "vlm": 145593
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": null,
+        "time_points": null,
+        "score": 100,
+        "answer_correct": true,
+        "strict_pass": true,
+        "notes": "正确说明未提供行数，回放871840 ms导出证据可确认。发现了两次导出文件名，额外描述的配置页编号有误，与本题核心结论无关。"
+      },
+      "execution_lane": "parallel"
+    },
+    {
+      "id": "Q08",
+      "group": "D",
+      "latency_ms": 186226,
+      "tool_calls": 47,
+      "runner_reasoner_tokens": 186988,
+      "evidence_count": 16,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 8,
+        "visual_embedding": 8,
+        "deepseek": 22,
+        "vlm": 20
+      },
+      "tokens": {
+        "text_embedding": 97,
+        "visual_embedding": 195,
+        "deepseek": 195694,
+        "vlm": 131790
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": null,
+        "time_points": null,
+        "score": 100,
+        "answer_correct": true,
+        "strict_pass": true,
+        "notes": "正确说明现有视频证据没有给出行数，没有编造数字。此题不强制正证据锚点。"
+      },
+      "execution_lane": "parallel"
+    },
+    {
+      "id": "Q09",
+      "group": "A",
+      "latency_ms": 2146,
+      "tool_calls": 0,
+      "runner_reasoner_tokens": 724,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 1,
+        "deepseek": 1
+      },
+      "tokens": {
+        "text_embedding": 23,
+        "deepseek": 724
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 25,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "承认无法确定完整码，但没读到E-前缀或遮挡画面。"
+      },
+      "execution_lane": "parallel"
+    },
+    {
+      "id": "Q09",
+      "group": "B",
+      "latency_ms": 24997,
+      "tool_calls": 12,
+      "runner_reasoner_tokens": 68131,
+      "evidence_count": 0,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 5,
+        "deepseek": 12
+      },
+      "tokens": {
+        "text_embedding": 62,
+        "deepseek": 68131
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 25,
+        "evidence_points": 0,
+        "time_points": 0,
+        "score": 25,
+        "answer_correct": false,
+        "strict_pass": false,
+        "notes": "承认无法确定完整码，但没有给出可见的E-前缀。"
+      },
+      "execution_lane": "parallel"
+    },
+    {
+      "id": "Q09",
+      "group": "C",
+      "latency_ms": 86090,
+      "tool_calls": 32,
+      "runner_reasoner_tokens": 149253,
+      "evidence_count": 6,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 2,
+        "deepseek": 17,
+        "vlm": 10
+      },
+      "tokens": {
+        "text_embedding": 31,
+        "deepseek": 149253,
+        "vlm": 24119
+      },
+      "missing_usage": {},
+      "http_failures": {},
+      "review": {
+        "answer_points": 50,
+        "evidence_points": 30,
+        "time_points": 20,
+        "score": 100,
+        "answer_correct": true,
+        "strict_pass": true,
+        "notes": "明确可读E-，其余为遮挡占位符，帧和942000–946000 ms区间与真值一致。附带的960秒片长说法有误，未影响可见内容判断。"
+      },
+      "execution_lane": "parallel"
+    },
+    {
+      "id": "Q09",
+      "group": "D",
+      "latency_ms": 99260,
+      "tool_calls": 62,
+      "runner_reasoner_tokens": 277781,
+      "evidence_count": 11,
+      "termination": "completed",
+      "error": null,
+      "calls": {
+        "text_embedding": 7,
+        "visual_embedding": 7,
+        "deepseek": 27,
+        "vlm": 18
+      },
+      "tokens": {
+        "text_embedding": 71,
+        "visual_embedding": 164,
+        "deepseek": 284157,
+        "vlm": 66069
+      },
+      "missing_usage": {
+        "vlm": 5
+      },
+      "http_failures": {
+        "429": 5
+      },
+      "review": {
+        "answer_points": 50,
+        "evidence_points": 30,
+        "time_points": 20,
+        "score": 100,
+        "answer_correct": true,
+        "strict_pass": true,
+        "notes": "给出E-并说明其余遮挡。明确的942480/945000 ms可回放原帧，且同视频制品存在。Evidence Store的refs为空另计生产缺陷。"
+      },
+      "execution_lane": "parallel"
+    }
+  ]
+}

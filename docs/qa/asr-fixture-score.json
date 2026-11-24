@@ -1,0 +1,61 @@
+{
+  "runs": 1,
+  "reference_utterances": 6,
+  "matched_utterances": 3,
+  "blank_audio_markers": 37,
+  "words_reference": 33,
+  "word_edit_distance": 16,
+  "wer_excluding_markers": 0.48484848484848486,
+  "start_error_ms_p50_matched": 112,
+  "end_error_ms_p50_matched": 154,
+  "details": [
+    {
+      "reference": "Set the default retry count to three.",
+      "observed": "Set the default retry count to three.",
+      "reference_audio_start_ms": 48111,
+      "reference_audio_end_ms": 50154,
+      "start_error_ms": 111,
+      "end_error_ms": 154
+    },
+    {
+      "reference": "It should have succeeded.",
+      "observed": null,
+      "reference_audio_start_ms": 204101,
+      "reference_audio_end_ms": 205183,
+      "start_error_ms": null,
+      "end_error_ms": null
+    },
+    {
+      "reference": "We already turned it off earlier.",
+      "observed": "We already turned it off earlier.",
+      "reference_audio_start_ms": 340112,
+      "reference_audio_end_ms": 341850,
+      "start_error_ms": 112,
+      "end_error_ms": 150
+    },
+    {
+      "reference": "Change the port and retry the same job.",
+      "observed": null,
+      "reference_audio_start_ms": 490107,
+      "reference_audio_end_ms": 492251,
+      "start_error_ms": null,
+      "end_error_ms": null
+    },
+    {
+      "reference": "The final export completed.",
+      "observed": null,
+      "reference_audio_start_ms": 871116,
+      "reference_audio_end_ms": 872673,
+      "start_error_ms": null,
+      "end_error_ms": null
+    },
+    {
+      "reference": "There is an error.",
+      "observed": "There is an error.",
+      "reference_audio_start_ms": 942120,
+      "reference_audio_end_ms": 942919,
+      "start_error_ms": 120,
+      "end_error_ms": 1081
+    }
+  ]
+}

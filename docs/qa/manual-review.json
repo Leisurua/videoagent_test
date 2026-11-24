@@ -1,0 +1,381 @@
+{
+  "Q01-A": {
+    "answer_points": 50,
+    "evidence_points": 30,
+    "time_points": 0,
+    "score": 80,
+    "answer_correct": true,
+    "strict_pass": false,
+    "notes": "正确答3次，有ASR原句。只定位到30秒分片，真实语音约48.11–50.15秒。"
+  },
+  "Q01-B": {
+    "answer_points": 50,
+    "evidence_points": 30,
+    "time_points": 0,
+    "score": 80,
+    "answer_correct": true,
+    "strict_pass": false,
+    "notes": "正确答3次，有ASR原句。只定位到30秒分片，真实语音约48.11–50.15秒。"
+  },
+  "Q01-C": {
+    "answer_points": 50,
+    "evidence_points": 30,
+    "time_points": 0,
+    "score": 80,
+    "answer_correct": true,
+    "strict_pass": false,
+    "notes": "正确答3次，有ASR原句。只定位到30秒分片，真实语音约48.11–50.15秒。"
+  },
+  "Q01-D": {
+    "answer_points": 50,
+    "evidence_points": 30,
+    "time_points": 0,
+    "score": 80,
+    "answer_correct": true,
+    "strict_pass": false,
+    "notes": "正确答3次，有ASR原句。只定位到30秒分片，真实语音约48.11–50.15秒。"
+  },
+  "Q02-A": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "缺少视觉内容，未给编号。"
+  },
+  "Q02-B": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "视觉工具受组别限制，未给编号。"
+  },
+  "Q02-C": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 20,
+    "score": 20,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "定位正确，误把右上角数字零当成字母O。"
+  },
+  "Q02-D": {
+    "answer_points": 50,
+    "evidence_points": 30,
+    "time_points": 20,
+    "score": 100,
+    "answer_correct": true,
+    "strict_pass": true,
+    "notes": "给出R0-17，区分左侧RO-17，给出实在的432000/433120等帧。"
+  },
+  "Q02-D-S": {
+    "answer_points": 50,
+    "evidence_points": 30,
+    "time_points": 20,
+    "score": 100,
+    "answer_correct": true,
+    "strict_pass": false,
+    "notes": "给出R0-17和正确帧，同时有一句把左侧RO-17误作R0-17，故严格不通过。"
+  },
+  "Q02-T-M": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 20,
+    "score": 20,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "定位正确，最终以左侧示例推断编号RO-17。"
+  },
+  "Q03-A": {
+    "answer_points": 25,
+    "evidence_points": 15,
+    "time_points": 0,
+    "score": 40,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "识别迟到的口述，但漏掉140000 ms首次状态转换；没有精确的ASR引用。"
+  },
+  "Q03-B": {
+    "answer_points": 25,
+    "evidence_points": 15,
+    "time_points": 0,
+    "score": 40,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "识别迟到的口述，但漏掉140000 ms首次状态转换；没有精确的ASR引用。"
+  },
+  "Q03-C": {
+    "answer_points": 25,
+    "evidence_points": 15,
+    "time_points": 0,
+    "score": 40,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "识别迟到的口述，但漏掉140000 ms首次状态转换；没有精确的ASR引用。"
+  },
+  "Q03-D": {
+    "answer_points": 25,
+    "evidence_points": 15,
+    "time_points": 0,
+    "score": 40,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "识别迟到的口述，但漏掉140000 ms首次状态转换；没有精确的ASR引用。"
+  },
+  "Q04-A": {
+    "answer_points": 8.33,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 8.33,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "仅答出改端口的指令，漏掉具体失败原因、实际新值和成功验证。"
+  },
+  "Q04-B": {
+    "answer_points": 8.33,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 8.33,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "仅答出改端口的指令，漏掉具体失败原因、实际新值和成功验证。"
+  },
+  "Q04-D": {
+    "answer_points": 8.33,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 8.33,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "仅答出改端口的指令，漏掉具体失败原因、实际新值和成功验证。"
+  },
+  "Q04-C": {
+    "answer_points": 8.33,
+    "evidence_points": 0,
+    "time_points": 6.67,
+    "score": 15,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "看到490000 ms端口8080页面，未确认实际修改和同一任务恢复。"
+  },
+  "Q04-D-S": {
+    "answer_points": 25,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 25,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "答出非法端口70000与改端口的指令，把失败归到不显示该画面的189375 ms，且未确认同一任务成功。"
+  },
+  "Q04-T-M": {
+    "answer_points": 33.33,
+    "evidence_points": 20,
+    "time_points": 13.33,
+    "score": 66.66,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "两帧支持70000无效和8080配置，漏掉Job 42重试成功帧。"
+  },
+  "Q05-A": {
+    "answer_points": 12.5,
+    "evidence_points": 15,
+    "time_points": 0,
+    "score": 27.5,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "引用了正确口述但未能与首次提交匹配。"
+  },
+  "Q05-B": {
+    "answer_points": 25,
+    "evidence_points": 15,
+    "time_points": 0,
+    "score": 40,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "识别条件下最合适口述，状态栏未作答。"
+  },
+  "Q05-C": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "未回答声画冲突，并将采样未发现误写为不存在。"
+  },
+  "Q05-D": {
+    "answer_points": 25,
+    "evidence_points": 15,
+    "time_points": 0,
+    "score": 40,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "作为备选给出了正确口述和FAILED片段，主结论拒绝匹配首次事件，且片段起点错位。"
+  },
+  "Q06-D-S": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "基于稀疏抽帧未命中首次出现，没有时间答案。"
+  },
+  "Q06-T-M": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "基于稀疏抽帧未命中首次出现，没有时间答案。"
+  },
+  "Q06-A": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "未定位首次出现。"
+  },
+  "Q06-B": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "未定位首次出现。"
+  },
+  "Q06-C": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "未定位首次出现。"
+  },
+  "Q06-D": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "找到了第二次795000 ms，把它当首次；与569720 ms真值相差225280 ms。",
+    "absolute_time_error_ms": 225280
+  },
+  "Q07-C": {
+    "answer_points": 25,
+    "evidence_points": 15,
+    "time_points": 10,
+    "score": 50,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "正确给出正式导出的result.csv及874360 ms帧，未找到试导出draft.csv。"
+  },
+  "Q09-A": {
+    "answer_points": 25,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 25,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "承认无法确定完整码，但没读到E-前缀或遮挡画面。"
+  },
+  "Q09-B": {
+    "answer_points": 25,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 25,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "承认无法确定完整码，但没有给出可见的E-前缀。"
+  },
+  "Q07-A": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "未能获取两个文件名。"
+  },
+  "Q07-B": {
+    "answer_points": 0,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 0,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "只确认导出发生，未读到文件名。"
+  },
+  "Q07-D": {
+    "answer_points": 25,
+    "evidence_points": 0,
+    "time_points": 0,
+    "score": 25,
+    "answer_correct": false,
+    "strict_pass": false,
+    "notes": "正确确认result.csv，逐题引用未落到实际支持帧，未找到draft.csv。"
+  },
+  "Q09-C": {
+    "answer_points": 50,
+    "evidence_points": 30,
+    "time_points": 20,
+    "score": 100,
+    "answer_correct": true,
+    "strict_pass": true,
+    "notes": "明确可读E-，其余为遮挡占位符，帧和942000–946000 ms区间与真值一致。附带的960秒片长说法有误，未影响可见内容判断。"
+  },
+  "Q08-A": {
+    "answer_points": 50,
+    "evidence_points": null,
+    "time_points": null,
+    "score": 100,
+    "answer_correct": true,
+    "strict_pass": true,
+    "notes": "正确说明现有视频证据没有给出行数，没有编造数字。此题不强制正证据锚点。"
+  },
+  "Q08-B": {
+    "answer_points": 50,
+    "evidence_points": null,
+    "time_points": null,
+    "score": 100,
+    "answer_correct": true,
+    "strict_pass": true,
+    "notes": "正确说明现有视频证据没有给出行数，没有编造数字。此题不强制正证据锚点。"
+  },
+  "Q08-D": {
+    "answer_points": 50,
+    "evidence_points": null,
+    "time_points": null,
+    "score": 100,
+    "answer_correct": true,
+    "strict_pass": true,
+    "notes": "正确说明现有视频证据没有给出行数，没有编造数字。此题不强制正证据锚点。"
+  },
+  "Q09-D": {
+    "answer_points": 50,
+    "evidence_points": 30,
+    "time_points": 20,
+    "score": 100,
+    "answer_correct": true,
+    "strict_pass": true,
+    "notes": "给出E-并说明其余遮挡。明确的942480/945000 ms可回放原帧，且同视频制品存在。Evidence Store的refs为空另计生产缺陷。"
+  },
+  "Q08-C": {
+    "answer_points": 50,
+    "evidence_points": null,
+    "time_points": null,
+    "score": 100,
+    "answer_correct": true,
+    "strict_pass": true,
+    "notes": "正确说明未提供行数，回放871840 ms导出证据可确认。发现了两次导出文件名，额外描述的配置页编号有误，与本题核心结论无关。"
+  }
+}

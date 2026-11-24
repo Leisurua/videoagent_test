@@ -1,0 +1,410 @@
+{
+  "summary": {
+    "text": {
+      "hit_anchors": 8,
+      "total_anchors": 13,
+      "complete_questions": 3,
+      "scored_questions": 8,
+      "modalities": {
+        "asr": {
+          "hits": 3,
+          "total": 3
+        },
+        "visual": {
+          "hits": 5,
+          "total": 10
+        }
+      }
+    },
+    "dual": {
+      "hit_anchors": 10,
+      "total_anchors": 13,
+      "complete_questions": 5,
+      "scored_questions": 8,
+      "modalities": {
+        "asr": {
+          "hits": 3,
+          "total": 3
+        },
+        "visual": {
+          "hits": 7,
+          "total": 10
+        }
+      }
+    }
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "mode": "text",
+      "ranked_ids": [
+        "seg_0001",
+        "seg_0016",
+        "seg_0011",
+        "seg_0031",
+        "seg_0006"
+      ],
+      "matched_anchors": [
+        [
+          "asr",
+          [
+            "seg_0001"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q01",
+      "mode": "dual",
+      "ranked_ids": [
+        "seg_0006",
+        "seg_0031",
+        "seg_0001",
+        "seg_0020",
+        "seg_0016"
+      ],
+      "matched_anchors": [
+        [
+          "asr",
+          [
+            "seg_0001"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q02",
+      "mode": "text",
+      "ranked_ids": [
+        "seg_0031",
+        "seg_0011",
+        "seg_0016",
+        "seg_0006",
+        "seg_0001"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          []
+        ]
+      ]
+    },
+    {
+      "id": "Q02",
+      "mode": "dual",
+      "ranked_ids": [
+        "seg_0031",
+        "seg_0006",
+        "seg_0014",
+        "seg_0011",
+        "seg_0020"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          [
+            "seg_0014"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q03",
+      "mode": "text",
+      "ranked_ids": [
+        "seg_0011",
+        "seg_0016",
+        "seg_0031",
+        "seg_0001",
+        "seg_0006"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          []
+        ],
+        [
+          "asr",
+          [
+            "seg_0011"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q03",
+      "mode": "dual",
+      "ranked_ids": [
+        "seg_0006",
+        "seg_0031",
+        "seg_0011",
+        "seg_0016",
+        "seg_0020"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          []
+        ],
+        [
+          "asr",
+          [
+            "seg_0011"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q04",
+      "mode": "text",
+      "ranked_ids": [
+        "seg_0031",
+        "seg_0016",
+        "seg_0001",
+        "seg_0011",
+        "seg_0006"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          [
+            "seg_0006"
+          ]
+        ],
+        [
+          "visual",
+          [
+            "seg_0016"
+          ]
+        ],
+        [
+          "visual",
+          []
+        ]
+      ]
+    },
+    {
+      "id": "Q04",
+      "mode": "dual",
+      "ranked_ids": [
+        "seg_0006",
+        "seg_0031",
+        "seg_0016",
+        "seg_0024",
+        "seg_0001"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          [
+            "seg_0006"
+          ]
+        ],
+        [
+          "visual",
+          [
+            "seg_0016"
+          ]
+        ],
+        [
+          "visual",
+          [
+            "seg_0024"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q05",
+      "mode": "text",
+      "ranked_ids": [
+        "seg_0031",
+        "seg_0011",
+        "seg_0006",
+        "seg_0001",
+        "seg_0016"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          [
+            "seg_0006"
+          ]
+        ],
+        [
+          "asr",
+          [
+            "seg_0006"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q05",
+      "mode": "dual",
+      "ranked_ids": [
+        "seg_0031",
+        "seg_0006",
+        "seg_0020",
+        "seg_0011",
+        "seg_0001"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          [
+            "seg_0006"
+          ]
+        ],
+        [
+          "asr",
+          [
+            "seg_0006"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q06",
+      "mode": "text",
+      "ranked_ids": [
+        "seg_0011",
+        "seg_0031",
+        "seg_0029",
+        "seg_0001",
+        "seg_0006"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          []
+        ]
+      ]
+    },
+    {
+      "id": "Q06",
+      "mode": "dual",
+      "ranked_ids": [
+        "seg_0031",
+        "seg_0006",
+        "seg_0011",
+        "seg_0026",
+        "seg_0020"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          []
+        ]
+      ]
+    },
+    {
+      "id": "Q07",
+      "mode": "text",
+      "ranked_ids": [
+        "seg_0029",
+        "seg_0031",
+        "seg_0016",
+        "seg_0011",
+        "seg_0006"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          []
+        ],
+        [
+          "visual",
+          [
+            "seg_0029"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q07",
+      "mode": "dual",
+      "ranked_ids": [
+        "seg_0006",
+        "seg_0031",
+        "seg_0020",
+        "seg_0029",
+        "seg_0016"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          []
+        ],
+        [
+          "visual",
+          [
+            "seg_0029"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q08",
+      "mode": "text",
+      "ranked_ids": [
+        "seg_0029",
+        "seg_0031",
+        "seg_0011",
+        "seg_0006",
+        "seg_0001"
+      ],
+      "matched_anchors": []
+    },
+    {
+      "id": "Q08",
+      "mode": "dual",
+      "ranked_ids": [
+        "seg_0006",
+        "seg_0031",
+        "seg_0020",
+        "seg_0029",
+        "seg_0011"
+      ],
+      "matched_anchors": []
+    },
+    {
+      "id": "Q09",
+      "mode": "text",
+      "ranked_ids": [
+        "seg_0031",
+        "seg_0011",
+        "seg_0016",
+        "seg_0029",
+        "seg_0001"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          [
+            "seg_0031"
+          ]
+        ]
+      ]
+    },
+    {
+      "id": "Q09",
+      "mode": "dual",
+      "ranked_ids": [
+        "seg_0031",
+        "seg_0006",
+        "seg_0011",
+        "seg_0020",
+        "seg_0016"
+      ],
+      "matched_anchors": [
+        [
+          "visual",
+          [
+            "seg_0031"
+          ]
+        ]
+      ]
+    }
+  ]
+}

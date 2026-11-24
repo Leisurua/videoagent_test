@@ -1,0 +1,47 @@
+[
+  {
+    "id": "Q01",
+    "question": "讲师明确要求把默认重试次数设为多少？ 请引用支持答案的具体视频时间。",
+    "category": "asr_only"
+  },
+  {
+    "id": "Q02",
+    "question": "07:12 附近，配置页右上角的会话编号是什么？请逐字符抄写。 请引用支持答案的具体视频时间。",
+    "category": "visual_ocr"
+  },
+  {
+    "id": "Q03",
+    "question": "讲师说刚才已经关掉了时，先前实际关闭的是哪个选项？操作与口述分别在何时？ 请引用支持答案的具体视频时间。",
+    "category": "silent_action_delayed_mention"
+  },
+  {
+    "id": "Q04",
+    "question": "哪项配置导致第一次提交失败？后来改了什么，怎样确认问题解决？ 请引用支持答案的具体视频时间。",
+    "category": "cross_segment_causality"
+  },
+  {
+    "id": "Q05",
+    "question": "第一次提交时，状态栏实际显示什么？讲师当时怎么说？ 请引用支持答案的具体视频时间。",
+    "category": "audio_visual_conflict"
+  },
+  {
+    "id": "Q06",
+    "question": "缓存已清空（CACHE CLEARED）首次出现于何时？ 请引用支持答案的具体视频时间。",
+    "category": "brief_duplicate_event"
+  },
+  {
+    "id": "Q07",
+    "question": "正式导出的文件名是什么？它与前面的试导出文件名有何区别？ 请引用支持答案的具体视频时间。",
+    "category": "similar_scene_disambiguation"
+  },
+  {
+    "id": "Q08",
+    "question": "正式导出的 CSV 一共有多少行？ 请引用支持答案的具体视频时间。",
+    "category": "absent"
+  },
+  {
+    "id": "Q09",
+    "question": "最后一次状态提示显示的完整错误码是什么？ 请引用支持答案的具体视频时间。",
+    "category": "insufficient"
+  }
+]

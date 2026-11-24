@@ -1,0 +1,391 @@
+{
+  "schema_version": "1.0",
+  "time_unit": "ms",
+  "video_id": "fixture",
+  "annotation_status": "scripted_windows",
+  "questions": [
+    {
+      "id": "Q01",
+      "video_id": "fixture",
+      "category": "asr_only",
+      "question": "讲师明确要求把默认重试次数设为多少？ 请引用支持答案的具体视频时间。",
+      "reference_answer": "3 次。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "id": "e1",
+          "modality": "asr",
+          "kind": "interval",
+          "start_ms": 48000,
+          "end_ms": 51200,
+          "observation": "Set the default retry count to three.",
+          "min_tiou": 0.3
+        }
+      ],
+      "distractors": [],
+      "claims": [
+        {
+          "id": "c1",
+          "expected": "默认重试次数是 3",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q02",
+      "video_id": "fixture",
+      "category": "visual_ocr",
+      "question": "07:12 附近，配置页右上角的会话编号是什么？请逐字符抄写。 请引用支持答案的具体视频时间。",
+      "reference_answer": "R0-17（第二个字符是数字零）。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "id": "e1",
+          "modality": "visual",
+          "kind": "interval",
+          "start_ms": 432000,
+          "end_ms": 436000,
+          "observation": "Session ID: R0-17, left example RO-17",
+          "min_tiou": 0.3
+        }
+      ],
+      "distractors": [],
+      "claims": [
+        {
+          "id": "c1",
+          "expected": "右上角编号精确为 R0-17",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q03",
+      "video_id": "fixture",
+      "category": "silent_action_delayed_mention",
+      "question": "讲师说刚才已经关掉了时，先前实际关闭的是哪个选项？操作与口述分别在何时？ 请引用支持答案的具体视频时间。",
+      "reference_answer": "02:20 关闭 Auto Save；约 05:40 口述已关。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "id": "e1",
+          "modality": "visual",
+          "kind": "point",
+          "start_ms": 140000,
+          "end_ms": 140000,
+          "observation": "Auto Save ON to OFF",
+          "tolerance_ms": 2000
+        },
+        {
+          "id": "e2",
+          "modality": "asr",
+          "kind": "interval",
+          "start_ms": 340000,
+          "end_ms": 343000,
+          "observation": "We already turned it off earlier.",
+          "min_tiou": 0.3
+        }
+      ],
+      "distractors": [],
+      "claims": [
+        {
+          "id": "c1",
+          "expected": "02:20 时 Auto Save 由 ON 变为 OFF",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e1"
+            ]
+          ]
+        },
+        {
+          "id": "c2",
+          "expected": "之后的口述指代先前操作",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e1",
+              "e2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q04",
+      "video_id": "fixture",
+      "category": "cross_segment_causality",
+      "question": "哪项配置导致第一次提交失败？后来改了什么，怎样确认问题解决？ 请引用支持答案的具体视频时间。",
+      "reference_answer": "Job 42 的端口 70000 无效；改为 8080；同一 Job 42 重试后显示成功。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "id": "e1",
+          "modality": "visual",
+          "kind": "interval",
+          "start_ms": 204000,
+          "end_ms": 208000,
+          "observation": "Job 42 FAILED invalid port 70000",
+          "min_tiou": 0.3
+        },
+        {
+          "id": "e2",
+          "modality": "visual",
+          "kind": "interval",
+          "start_ms": 490000,
+          "end_ms": 495000,
+          "observation": "Job 42 port 8080",
+          "min_tiou": 0.3
+        },
+        {
+          "id": "e3",
+          "modality": "visual",
+          "kind": "interval",
+          "start_ms": 723000,
+          "end_ms": 727000,
+          "observation": "Job 42 SUCCESS port 8080",
+          "min_tiou": 0.3
+        }
+      ],
+      "distractors": [],
+      "claims": [
+        {
+          "id": "c1",
+          "expected": "Job 42 初次失败的配置是端口 70000 无效",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e1"
+            ]
+          ]
+        },
+        {
+          "id": "c2",
+          "expected": "把端口改为 8080",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e2"
+            ]
+          ]
+        },
+        {
+          "id": "c3",
+          "expected": "同一 Job 42 成功画面验证修复",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e3"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q05",
+      "video_id": "fixture",
+      "category": "audio_visual_conflict",
+      "question": "第一次提交时，状态栏实际显示什么？讲师当时怎么说？ 请引用支持答案的具体视频时间。",
+      "reference_answer": "状态是 FAILED，讲师说应该成功了。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "id": "e1",
+          "modality": "visual",
+          "kind": "interval",
+          "start_ms": 204000,
+          "end_ms": 208000,
+          "observation": "FAILED",
+          "min_tiou": 0.3
+        },
+        {
+          "id": "e2",
+          "modality": "asr",
+          "kind": "interval",
+          "start_ms": 204000,
+          "end_ms": 207000,
+          "observation": "It should have succeeded.",
+          "min_tiou": 0.3
+        }
+      ],
+      "distractors": [],
+      "claims": [
+        {
+          "id": "c1",
+          "expected": "状态栏显示 FAILED",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e1"
+            ]
+          ]
+        },
+        {
+          "id": "c2",
+          "expected": "讲师说 It should have succeeded",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q06",
+      "video_id": "fixture",
+      "category": "brief_duplicate_event",
+      "question": "缓存已清空（CACHE CLEARED）首次出现于何时？ 请引用支持答案的具体视频时间。",
+      "reference_answer": "09:29.720（569720 ms）。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "id": "e1",
+          "modality": "visual",
+          "kind": "point",
+          "start_ms": 569720,
+          "end_ms": 569720,
+          "observation": "first CACHE CLEARED",
+          "tolerance_ms": 500
+        }
+      ],
+      "distractors": [
+        "13:15 again"
+      ],
+      "claims": [
+        {
+          "id": "c1",
+          "expected": "首次出现 569720 ms，允许误差 500 ms",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e1"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q07",
+      "video_id": "fixture",
+      "category": "similar_scene_disambiguation",
+      "question": "正式导出的文件名是什么？它与前面的试导出文件名有何区别？ 请引用支持答案的具体视频时间。",
+      "reference_answer": "正式导出 result.csv，试导出 draft.csv。",
+      "answerability": "answerable",
+      "evidence": [
+        {
+          "id": "e1",
+          "modality": "visual",
+          "kind": "interval",
+          "start_ms": 362000,
+          "end_ms": 365000,
+          "observation": "draft.csv",
+          "min_tiou": 0.3
+        },
+        {
+          "id": "e2",
+          "modality": "visual",
+          "kind": "interval",
+          "start_ms": 871000,
+          "end_ms": 875000,
+          "observation": "result.csv",
+          "min_tiou": 0.3
+        }
+      ],
+      "distractors": [],
+      "claims": [
+        {
+          "id": "c1",
+          "expected": "试导出 draft.csv",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e1"
+            ]
+          ]
+        },
+        {
+          "id": "c2",
+          "expected": "正式导出 result.csv",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e2"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "Q08",
+      "video_id": "fixture",
+      "category": "absent",
+      "question": "正式导出的 CSV 一共有多少行？ 请引用支持答案的具体视频时间。",
+      "reference_answer": "视频只显示导出状态和文件名，未提供行数。",
+      "answerability": "absent",
+      "evidence": [],
+      "distractors": [],
+      "claims": [
+        {
+          "id": "c1",
+          "expected": "视频没有提供可判定 CSV 行数的信息",
+          "weight": 1,
+          "evidence_any_of": []
+        }
+      ]
+    },
+    {
+      "id": "Q09",
+      "video_id": "fixture",
+      "category": "insufficient",
+      "question": "最后一次状态提示显示的完整错误码是什么？ 请引用支持答案的具体视频时间。",
+      "reference_answer": "只可确认 E- 前缀，后半部分被遮挡，完整错误码无法辨认。",
+      "answerability": "insufficient",
+      "evidence": [
+        {
+          "id": "e1",
+          "modality": "visual",
+          "kind": "interval",
+          "start_ms": 942000,
+          "end_ms": 946000,
+          "observation": "E- suffix obscured",
+          "min_tiou": 0.3
+        }
+      ],
+      "distractors": [],
+      "claims": [
+        {
+          "id": "c1",
+          "expected": "可见前缀 E-，其余被遮挡",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e1"
+            ]
+          ]
+        },
+        {
+          "id": "c2",
+          "expected": "完整码不可辨认",
+          "weight": 1,
+          "evidence_any_of": [
+            [
+              "e1"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "fixture_sha256": "2a68d76f765742defb6cb0ac99c93d5c915299b2121e16120888694c0ad89c0d"
+}

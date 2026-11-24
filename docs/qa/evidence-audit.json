@@ -1,0 +1,57 @@
+{
+  "C": {
+    "reported_ids": 56,
+    "missing_rows": 0,
+    "rows_with_no_frame_refs": 56,
+    "resolved_refs": 0,
+    "unresolved_refs": 0
+  },
+  "D": {
+    "reported_ids": 83,
+    "missing_rows": 0,
+    "rows_with_no_frame_refs": 83,
+    "resolved_refs": 0,
+    "unresolved_refs": 0
+  },
+  "D-S": {
+    "reported_ids": 26,
+    "missing_rows": 0,
+    "rows_with_no_frame_refs": 26,
+    "resolved_refs": 0,
+    "unresolved_refs": 0
+  },
+  "T-M": {
+    "reported_ids": 8,
+    "missing_rows": 0,
+    "rows_with_no_frame_refs": 8,
+    "resolved_refs": 0,
+    "unresolved_refs": 0
+  },
+  "real-cloud": {
+    "reported_ids": 22,
+    "missing_rows": 0,
+    "rows_with_no_frame_refs": 22,
+    "resolved_refs": 0,
+    "unresolved_refs": 0,
+    "explicit_answer_refs": 12,
+    "explicit_answer_ref_files": 11
+  },
+  "real-forced": {
+    "reported_ids": 3,
+    "missing_rows": 0,
+    "rows_with_no_frame_refs": 3,
+    "resolved_refs": 0,
+    "unresolved_refs": 0,
+    "explicit_answer_refs": 11,
+    "explicit_answer_ref_files": 11
+  },
+  "real-batched": {
+    "reported_ids": 2,
+    "missing_rows": 0,
+    "rows_with_no_frame_refs": 2,
+    "resolved_refs": 0,
+    "unresolved_refs": 0,
+    "explicit_answer_refs": 2,
+    "explicit_answer_ref_files": 2
+  }
+}

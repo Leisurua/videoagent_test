@@ -1,0 +1,10 @@
+# Build outputs & local artifacts
+cpp/build/
+go/bin/
+*.exe
+*.o
+*.a
+*.dll
+*.so
+data/
+.env

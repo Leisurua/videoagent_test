@@ -1,0 +1,356 @@
+{
+  "cancellation-SampleFrames": [
+    {
+      "elapsed_ms": 10,
+      "mode": "deadline",
+      "return_epoch_ms": 1795540456205,
+      "rpc": "sample",
+      "start_epoch_ms": 1795540456195,
+      "status": "DeadlineExceeded",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 10,
+      "server_exit_after_client_return_ms": 2,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 12,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 10,
+      "mode": "cancel",
+      "return_epoch_ms": 1795540456468,
+      "rpc": "sample",
+      "start_epoch_ms": 1795540456458,
+      "status": "Canceled",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 10,
+      "server_exit_after_client_return_ms": 8,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 18,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 40,
+      "mode": "deadline",
+      "return_epoch_ms": 1795540456759,
+      "rpc": "sample",
+      "start_epoch_ms": 1795540456719,
+      "status": "DeadlineExceeded",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 40,
+      "server_exit_after_client_return_ms": 2,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 42,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 40,
+      "mode": "cancel",
+      "return_epoch_ms": 1795540457050,
+      "rpc": "sample",
+      "start_epoch_ms": 1795540457010,
+      "status": "Canceled",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 40,
+      "server_exit_after_client_return_ms": 1,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 41,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 100,
+      "mode": "deadline",
+      "return_epoch_ms": 1795540457401,
+      "rpc": "sample",
+      "start_epoch_ms": 1795540457301,
+      "status": "DeadlineExceeded",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 100,
+      "server_exit_after_client_return_ms": 2,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 102,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 100,
+      "mode": "cancel",
+      "return_epoch_ms": 1795540457752,
+      "rpc": "sample",
+      "start_epoch_ms": 1795540457652,
+      "status": "Canceled",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 100,
+      "server_exit_after_client_return_ms": 2,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 102,
+          "cancel_seen": true
+        }
+      ]
+    }
+  ],
+  "cancellation-TranscribeASR": [
+    {
+      "elapsed_ms": 10,
+      "mode": "deadline",
+      "return_epoch_ms": 1795540458014,
+      "rpc": "asr",
+      "start_epoch_ms": 1795540458004,
+      "status": "DeadlineExceeded",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 10,
+      "server_exit_after_client_return_ms": 1,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 11,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 10,
+      "mode": "cancel",
+      "return_epoch_ms": 1795540458275,
+      "rpc": "asr",
+      "start_epoch_ms": 1795540458265,
+      "status": "Canceled",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 10,
+      "server_exit_after_client_return_ms": 1,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 11,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 40,
+      "mode": "deadline",
+      "return_epoch_ms": 1795540458566,
+      "rpc": "asr",
+      "start_epoch_ms": 1795540458526,
+      "status": "DeadlineExceeded",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 40,
+      "server_exit_after_client_return_ms": 2,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 42,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 40,
+      "mode": "cancel",
+      "return_epoch_ms": 1795540458858,
+      "rpc": "asr",
+      "start_epoch_ms": 1795540458818,
+      "status": "Canceled",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 40,
+      "server_exit_after_client_return_ms": 27,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 67,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 100,
+      "mode": "deadline",
+      "return_epoch_ms": 1795540459209,
+      "rpc": "asr",
+      "start_epoch_ms": 1795540459109,
+      "status": "DeadlineExceeded",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 100,
+      "server_exit_after_client_return_ms": 3,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 103,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "elapsed_ms": 100,
+      "mode": "cancel",
+      "return_epoch_ms": 1795540459561,
+      "rpc": "asr",
+      "start_epoch_ms": 1795540459461,
+      "status": "Canceled",
+      "subsequent_health": "OK",
+      "test": "cancellation",
+      "trigger_ms": 100,
+      "server_exit_after_client_return_ms": 4,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 104,
+          "cancel_seen": true
+        }
+      ]
+    }
+  ],
+  "asr_phase_cancel-TranscribeASR": [
+    {
+      "deadline_ms": 25,
+      "health": "OK",
+      "return_epoch_ms": 1795541020889,
+      "start_epoch_ms": 1795541020864,
+      "status": "DeadlineExceeded",
+      "test": "asr_phase_cancel",
+      "server_exit_after_client_return_ms": 20,
+      "phases": [
+        {
+          "stage": "exit",
+          "ms_after_start": 45,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "deadline_ms": 80,
+      "health": "OK",
+      "return_epoch_ms": 1795541022970,
+      "start_epoch_ms": 1795541022890,
+      "status": "DeadlineExceeded",
+      "test": "asr_phase_cancel",
+      "server_exit_after_client_return_ms": 775,
+      "phases": [
+        {
+          "stage": "pcm_ready",
+          "ms_after_start": 73,
+          "cancel_seen": false
+        },
+        {
+          "stage": "model_ready",
+          "ms_after_start": 238,
+          "cancel_seen": true
+        },
+        {
+          "stage": "exit",
+          "ms_after_start": 855,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "deadline_ms": 200,
+      "health": "OK",
+      "return_epoch_ms": 1795541025172,
+      "start_epoch_ms": 1795541024972,
+      "status": "DeadlineExceeded",
+      "test": "asr_phase_cancel",
+      "server_exit_after_client_return_ms": 532,
+      "phases": [
+        {
+          "stage": "pcm_ready",
+          "ms_after_start": 27,
+          "cancel_seen": false
+        },
+        {
+          "stage": "model_ready",
+          "ms_after_start": 116,
+          "cancel_seen": false
+        },
+        {
+          "stage": "exit",
+          "ms_after_start": 732,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "deadline_ms": 350,
+      "health": "OK",
+      "return_epoch_ms": 1795541027523,
+      "start_epoch_ms": 1795541027172,
+      "status": "DeadlineExceeded",
+      "test": "asr_phase_cancel",
+      "server_exit_after_client_return_ms": 407,
+      "phases": [
+        {
+          "stage": "pcm_ready",
+          "ms_after_start": 18,
+          "cancel_seen": false
+        },
+        {
+          "stage": "model_ready",
+          "ms_after_start": 111,
+          "cancel_seen": false
+        },
+        {
+          "stage": "exit",
+          "ms_after_start": 758,
+          "cancel_seen": true
+        }
+      ]
+    },
+    {
+      "deadline_ms": 500,
+      "health": "OK",
+      "return_epoch_ms": 1795541030024,
+      "start_epoch_ms": 1795541029524,
+      "status": "DeadlineExceeded",
+      "test": "asr_phase_cancel",
+      "server_exit_after_client_return_ms": 240,
+      "phases": [
+        {
+          "stage": "pcm_ready",
+          "ms_after_start": 34,
+          "cancel_seen": false
+        },
+        {
+          "stage": "model_ready",
+          "ms_after_start": 123,
+          "cancel_seen": false
+        },
+        {
+          "stage": "exit",
+          "ms_after_start": 740,
+          "cancel_seen": true
+        }
+      ]
+    }
+  ]
+}
